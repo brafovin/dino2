@@ -877,6 +877,8 @@
         <a href="#damen" onclick="filterProducts('damen'); return false;">Damen</a>
         <a href="#herren" onclick="filterProducts('herren'); return false;">Herren</a>
         <a href="#schuhe" onclick="filterProducts('schuhe'); return false;">Schuhe</a>
+        <a href="#sport" onclick="filterProducts('sport'); return false;">Sport</a>
+        <a href="#taschen" onclick="filterProducts('taschen'); return false;">Taschen</a>
         <a href="#produkte" class="sale" onclick="filterProducts('sale'); return false;">Sale</a>
       </nav>
 
@@ -902,6 +904,8 @@
     <a href="#damen" onclick="filterProducts('damen'); closeMobileNav(); return false;">Damen</a>
     <a href="#herren" onclick="filterProducts('herren'); closeMobileNav(); return false;">Herren</a>
     <a href="#schuhe" onclick="filterProducts('schuhe'); closeMobileNav(); return false;">Schuhe</a>
+    <a href="#sport" onclick="filterProducts('sport'); closeMobileNav(); return false;">Sport</a>
+    <a href="#taschen" onclick="filterProducts('taschen'); closeMobileNav(); return false;">Taschen</a>
     <a href="#produkte" class="sale" onclick="filterProducts('sale'); closeMobileNav(); return false;">Sale</a>
   </nav>
 </header>
@@ -1010,7 +1014,9 @@
         <button class="filter-tab" data-filter="damen" onclick="filterProducts('damen')">Damen</button>
         <button class="filter-tab" data-filter="herren" onclick="filterProducts('herren')">Herren</button>
         <button class="filter-tab" data-filter="schuhe" onclick="filterProducts('schuhe')">Schuhe</button>
-        <button class="filter-tab active-gold" data-filter="sale" onclick="filterProducts('sale')">Sale 🔥</button>
+        <button class="filter-tab" data-filter="sport" onclick="filterProducts('sport')">⚽ Sport</button>
+        <button class="filter-tab" data-filter="taschen" onclick="filterProducts('taschen')">👜 Taschen</button>
+        <button class="filter-tab" data-filter="sale" onclick="filterProducts('sale')">🔥 Sale</button>
       </div>
       <select class="sort-select" id="sortSelect" onchange="sortProducts(this.value)">
         <option value="default">Sortierung: Standard</option>
@@ -1405,6 +1411,160 @@ const PRODUCTS = [
     image: 'https://picsum.photos/seed/jogger-pants/400/533',
     isSale: false,
   },
+  {
+    id: 17,
+    name: 'Cargo-Hose «Berlin»',
+    category: 'herren',
+    desc: 'Baumwolle, Seitentaschen, Relaxed Fit',
+    price: 64.95,
+    oldPrice: null,
+    badge: 'new',
+    image: 'https://picsum.photos/seed/cargo-pants/400/533',
+    isSale: false,
+  },
+  {
+    id: 18,
+    name: 'Skinny Jeans «Mailand»',
+    category: 'damen',
+    desc: 'Stretch-Denim, hohe Taille, dunkle Waschung',
+    price: 69.95,
+    oldPrice: 89.00,
+    badge: 'sale',
+    image: 'https://picsum.photos/seed/skinny-jeans-women/400/533',
+    isSale: true,
+  },
+  {
+    id: 19,
+    name: 'Oversized T-Shirt «Wave»',
+    category: 'herren',
+    desc: '100% Baumwolle, Dropped Shoulder',
+    price: 29.95,
+    oldPrice: null,
+    badge: 'new',
+    image: 'https://picsum.photos/seed/oversized-tshirt/400/533',
+    isSale: false,
+  },
+  {
+    id: 20,
+    name: 'Crop T-Shirt «Sunset»',
+    category: 'damen',
+    desc: 'Weiches Jersey, kurze Länge',
+    price: 24.95,
+    oldPrice: 34.00,
+    badge: 'sale',
+    image: 'https://picsum.photos/seed/crop-tshirt/400/533',
+    isSale: true,
+  },
+  {
+    id: 21,
+    name: 'Basic T-Shirt 3er-Pack',
+    category: 'herren',
+    desc: 'Rundhals, Baumwolle, Weiß/Grau/Schwarz',
+    price: 39.95,
+    oldPrice: null,
+    badge: 'trend',
+    image: 'https://picsum.photos/seed/basic-tshirt-pack/400/533',
+    isSale: false,
+  },
+  {
+    id: 22,
+    name: 'Fußball-Trikot «FC Pro»',
+    category: 'sport',
+    desc: 'Atmungsaktiv, Polyester, Vereinsdesign',
+    price: 54.95,
+    oldPrice: 69.00,
+    badge: 'sale',
+    image: 'https://picsum.photos/seed/football-jersey/400/533',
+    isSale: true,
+  },
+  {
+    id: 23,
+    name: 'Trikot «Away Edition»',
+    category: 'sport',
+    desc: 'Leichtes Mesh-Gewebe, Auswärtstrikot',
+    price: 49.95,
+    oldPrice: null,
+    badge: 'new',
+    image: 'https://picsum.photos/seed/away-jersey/400/533',
+    isSale: false,
+  },
+  {
+    id: 24,
+    name: 'Fußballschuhe «Striker AG»',
+    category: 'sport',
+    desc: 'Kunstrasen-Sohle, Schnürverschluss',
+    price: 89.95,
+    oldPrice: 119.00,
+    badge: 'sale',
+    image: 'https://picsum.photos/seed/football-boots-ag/400/533',
+    isSale: true,
+  },
+  {
+    id: 25,
+    name: 'Fußballschuhe «Elite FG»',
+    category: 'sport',
+    desc: 'Naturrasen, Carbon-Stollen, Profi-Qualität',
+    price: 139.95,
+    oldPrice: null,
+    badge: 'top',
+    image: 'https://picsum.photos/seed/football-boots-elite/400/533',
+    isSale: false,
+  },
+  {
+    id: 26,
+    name: 'Sporttasche «Team Bag»',
+    category: 'taschen',
+    desc: '40L, Nassfach, verstellbarer Gurt',
+    price: 44.95,
+    oldPrice: 59.00,
+    badge: 'sale',
+    image: 'https://picsum.photos/seed/sports-bag/400/533',
+    isSale: true,
+  },
+  {
+    id: 27,
+    name: 'Rucksack «Urban Pack»',
+    category: 'taschen',
+    desc: '25L, Laptop-Fach, wasserabweisend',
+    price: 69.95,
+    oldPrice: null,
+    badge: 'new',
+    image: 'https://picsum.photos/seed/urban-backpack/400/533',
+    isSale: false,
+  },
+  {
+    id: 28,
+    name: 'Handtasche «Elegance»',
+    category: 'taschen',
+    desc: 'Kunstleder, Goldverschluss, Damen',
+    price: 79.95,
+    oldPrice: 99.00,
+    badge: 'sale',
+    image: 'https://picsum.photos/seed/handbag-elegance/400/533',
+    isSale: true,
+  },
+  {
+    id: 29,
+    name: 'Chino-Hose «Slim Madrid»',
+    category: 'herren',
+    desc: 'Slim Fit, elastischer Bund, verschiedene Farben',
+    price: 59.95,
+    oldPrice: null,
+    badge: null,
+    image: 'https://picsum.photos/seed/slim-chino-madrid/400/533',
+    isSale: false,
+  },
+  {
+    id: 30,
+    name: 'Weite Hose «Palazzo»',
+    category: 'damen',
+    desc: 'Fließendes Gewebe, Hochbund, elegant',
+    price: 74.95,
+    oldPrice: null,
+    badge: 'trend',
+    image: 'https://picsum.photos/seed/palazzo-pants/400/533',
+    isSale: false,
+  },
 ];
 
 /* ═══════════════════════════════════════════
@@ -1453,7 +1613,7 @@ function renderProducts() {
     }</span>` : '';
     const oldPriceHTML = product.oldPrice
       ? `<span class="price-old">${formatPrice(product.oldPrice)}</span>` : '';
-    const catLabel = { damen:'Damen', herren:'Herren', schuhe:'Schuhe' }[product.category];
+    const catLabel = { damen:'Damen', herren:'Herren', schuhe:'Schuhe', sport:'Sport', taschen:'Taschen' }[product.category];
 
     const card = document.createElement('article');
     card.className = 'product-card';
@@ -1571,7 +1731,7 @@ function updateCartUI() {
           <img src="${item.image}" alt="${item.name}" loading="lazy" />
         </div>
         <div class="cart-item-info">
-          <div class="cart-item-cat">${{ damen:'Damen', herren:'Herren', schuhe:'Schuhe' }[item.category]}</div>
+          <div class="cart-item-cat">${{ damen:'Damen', herren:'Herren', schuhe:'Schuhe', sport:'Sport', taschen:'Taschen' }[item.category]}</div>
           <div class="cart-item-name">${item.name}</div>
           <div class="cart-item-price">${formatPrice(item.price * item.qty)}</div>
           <div class="cart-item-qty">
