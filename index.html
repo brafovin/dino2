@@ -433,6 +433,7 @@
     .badge-new { background: var(--navy); color: var(--white); }
     .badge-sale { background: var(--red); color: var(--white); }
     .badge-trend { background: var(--gold); color: var(--navy); }
+    .badge-luxury { background: linear-gradient(135deg, #1a1a1a, #4a3728); color: #e8c97e; border: 1px solid #c9a84c; letter-spacing: .06em; }
 
     .product-wishlist {
       position: absolute;
@@ -1653,6 +1654,159 @@ const PRODUCTS = [
     image: 'https://picsum.photos/seed/palazzo-pants/400/533',
     isSale: false,
   },
+
+  /* ── NIKE KLEIDUNG ── */
+  {
+    id: 40,
+    name: 'Nike Tech Fleece Hoodie',
+    category: 'herren',
+    desc: 'Tech Fleece, Kapuze, Signature-Schnitt',
+    price: 119.95,
+    oldPrice: 149.00,
+    badge: 'sale',
+    image: 'https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=400&h=533&fit=crop',
+    isSale: true,
+  },
+  {
+    id: 41,
+    name: 'Nike Sportswear Club Tee',
+    category: 'herren',
+    desc: 'Klassisches Nike T-Shirt, Baumwolle',
+    price: 34.95,
+    oldPrice: null,
+    badge: 'new',
+    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=533&fit=crop',
+    isSale: false,
+  },
+  {
+    id: 42,
+    name: 'Nike Windrunner Jacke',
+    category: 'damen',
+    desc: 'Leichte Laufjacke, Winddicht, Reflektoren',
+    price: 99.95,
+    oldPrice: 129.00,
+    badge: 'sale',
+    image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=533&fit=crop',
+    isSale: true,
+  },
+  {
+    id: 43,
+    name: 'Nike Pro Leggings',
+    category: 'damen',
+    desc: 'Enganliegend, Dri-FIT, hoher Bund',
+    price: 54.95,
+    oldPrice: null,
+    badge: 'trend',
+    image: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400&h=533&fit=crop',
+    isSale: false,
+  },
+
+  /* ── DIOR KLEIDUNG ── */
+  {
+    id: 44,
+    name: 'Dior Oblique T-Shirt',
+    category: 'herren',
+    desc: 'Signature Oblique-Muster, Premium Baumwolle',
+    price: 490.00,
+    oldPrice: null,
+    badge: 'trend',
+    image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=533&fit=crop',
+    isSale: false,
+  },
+  {
+    id: 45,
+    name: 'Dior Saddle Kleid',
+    category: 'damen',
+    desc: 'Midi-Kleid, CD-Monogramm, Seide',
+    price: 1890.00,
+    oldPrice: null,
+    badge: 'luxury',
+    image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=400&h=533&fit=crop',
+    isSale: false,
+  },
+
+  /* ── GUCCI KLEIDUNG ── */
+  {
+    id: 46,
+    name: 'Gucci Logo Hoodie',
+    category: 'herren',
+    desc: 'GG-Logo Stickerei, Premium Baumwoll-Fleece',
+    price: 790.00,
+    oldPrice: null,
+    badge: 'luxury',
+    image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400&h=533&fit=crop',
+    isSale: false,
+  },
+  {
+    id: 47,
+    name: 'Gucci GG Blouson Jacke',
+    category: 'damen',
+    desc: 'GG-Muster, Bomberjacke, Seide-Futter',
+    price: 2490.00,
+    oldPrice: null,
+    badge: 'luxury',
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=533&fit=crop',
+    isSale: false,
+  },
+
+  /* ── LOUIS VUITTON KLEIDUNG ── */
+  {
+    id: 48,
+    name: 'Louis Vuitton Monogram Shirt',
+    category: 'herren',
+    desc: 'LV Monogramm All-Over, Baumwolle',
+    price: 650.00,
+    oldPrice: null,
+    badge: 'luxury',
+    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4b4869?w=400&h=533&fit=crop',
+    isSale: false,
+  },
+  {
+    id: 49,
+    name: 'Louis Vuitton Seiden Bluse',
+    category: 'damen',
+    desc: 'Damier-Muster, 100% Seide, Knopfleiste',
+    price: 1290.00,
+    oldPrice: null,
+    badge: 'luxury',
+    image: 'https://images.unsplash.com/photo-1485462537746-965f33f7f6a7?w=400&h=533&fit=crop',
+    isSale: false,
+  },
+
+  /* ── POLO RALPH LAUREN KLEIDUNG ── */
+  {
+    id: 50,
+    name: 'Polo Ralph Lauren Classic Tee',
+    category: 'herren',
+    desc: 'Klassisches Polo-Shirt, Piqué-Stoff, Polo Pony',
+    price: 89.95,
+    oldPrice: 109.00,
+    badge: 'sale',
+    image: 'https://images.unsplash.com/photo-1598032895397-b9472444bf93?w=400&h=533&fit=crop',
+    isSale: true,
+  },
+  {
+    id: 51,
+    name: 'Polo Ralph Lauren Pullover',
+    category: 'herren',
+    desc: 'V-Ausschnitt, Merinowolle, Polo Pony',
+    price: 149.95,
+    oldPrice: null,
+    badge: 'new',
+    image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&h=533&fit=crop',
+    isSale: false,
+  },
+  {
+    id: 52,
+    name: 'Ralph Lauren Polo Kleid',
+    category: 'damen',
+    desc: 'A-Linie Midi-Kleid, Baumwolle, Polo Pony',
+    price: 129.95,
+    oldPrice: 159.00,
+    badge: 'sale',
+    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=533&fit=crop',
+    isSale: true,
+  },
 ];
 
 /* ═══════════════════════════════════════════
@@ -1697,7 +1851,7 @@ function renderProducts() {
   list.forEach(product => {
     const inCart = cart.find(i => i.id === product.id);
     const badgeHTML = product.badge ? `<span class="product-badge badge-${product.badge}">${
-      product.badge === 'new' ? 'Neu' : product.badge === 'sale' ? 'Sale' : 'Trend'
+      product.badge === 'new' ? 'Neu' : product.badge === 'sale' ? 'Sale' : product.badge === 'luxury' ? '✦ Luxury' : product.badge === 'top' ? 'Top' : 'Trend'
     }</span>` : '';
     const oldPriceHTML = product.oldPrice
       ? `<span class="price-old">${formatPrice(product.oldPrice)}</span>` : '';
